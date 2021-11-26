@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RinconDelSaber.View.PageRegistro"
+             BackgroundColor="#E6E7F3">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Padding="-10" Margin="1" HorizontalOptions="FillAndExpand">
+                       
+
+            </StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <Frame Grid.Row="0" Padding="10" Margin="10" HasShadow="True" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                   
+                    <StackLayout>
+                        <StackLayout>
+                            <Image Source="close.png" Aspect="AspectFill" HeightRequest="0" HorizontalOptions="Start" VerticalOptions="Center">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer x:Name="TapBackArrow" Tapped="TapBackArrow_Tapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </StackLayout>
+
+                        <StackLayout  Margin="300,0" >
+                            
+                        </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="590" CornerRadius="0" Padding="0" Margin="-10">
+
+                                <Button x:Name="bt" Text="Llenar datos de Usuario:" BackgroundColor="#1964BE" TextColor="White" />
+                                </Frame>
+                            </StackLayout>
+                <StackLayout Orientation="Horizontal">
+
+                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="20" Padding="0" Margin="10">
+                                <Image Source="https://image.flaticon.com/icons/png/512/306/306232.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry x:Name="txtNombre" Placeholder="Nombres" TextColor="Black" FontSize="16"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="20" Padding="0" Margin="10">
+                                <Image Source="https://image.flaticon.com/icons/png/512/306/306232.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry x:Name="txtApellido" Placeholder="Apellidos" TextColor="Black" FontSize="16"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="20" Padding="0" Margin="10">
+                                <Image Source="https://pngimage.net/wp-content/uploads/2018/05/cedula-png-3.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry x:Name="txtDocumento" Placeholder="Documento Identidad" TextColor="Black" FontSize="16"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="20" Padding="0" Margin="10">
+                                <Image Source="https://images.vexels.com/media/users/3/140138/isolated/preview/88e50689fa3280c748d000aaf0bad480-icono-de-ronda-de-correo-electr-oacute-nico-1-by-vexels.png" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry x:Name="txtEmail" Placeholder="Email" TextColor="Black" FontSize="16"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"></Entry>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="20" Padding="0" Margin="10">
+                                <Image Source="https://img2.freepng.es/20180427/eue/kisspng-password-computer-icons-encryption-information-jarvis-ui-5ae2c549b33cb2.9551487015248110817342.jpg" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry x:Name="txtContrasena" Placeholder="Contraseña" IsPassword="True" TextColor="Black" FontSize="16"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" />
+                        </StackLayout>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <CheckBox x:Name="chkAceptaTerminos" Grid.Row="0" Grid.Column="0" Color="#1964BE" VerticalOptions="Center"></CheckBox>
+                            <Label Grid.Row="0" Grid.Column="1" VerticalOptions="Center">Acepto los</Label>
+                            <Label Grid.Row="0" Grid.Column="2" TextColor="#1964BE" TextDecorations="Underline" VerticalOptions="Center">términos y condiciones
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer x:Name="TapLabelTerminosCondiciones" Tapped="TapLabelTerminosCondiciones_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
+
+
+                        <Button x:Name="btnRegistrar" Text="Registrarme" BackgroundColor="#1964BE" TextColor="White" Clicked="BtnRegistrar_Clicked"/>
+                        <Button x:Name="btnCancelar" Text="Cancelar" BackgroundColor="#1964BE" TextColor="White" Clicked="btnCancelar_Clicked"/>
+
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+            <ContentView x:Name="popupTerminosCondiciones" BackgroundColor="#C0808080" Padding="10, 0" IsVisible="false" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <Frame Margin="10" Padding="10" BackgroundColor="#ffffff" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <Label LineBreakMode="WordWrap">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan placerat fermentum. Mauris vel dignissim eros. Mauris vulputate dolor aliquet, luctus turpis non, efficitur mi. Nulla sodales id sapien vel malesuada. Curabitur mi odio, sagittis eget eros at, auctor egestas ligula. Morbi a dolor congue, feugiat odio at, malesuada ipsum. Nullam molestie felis vel lorem pharetra, non sollicitudin magna condimentum. Mauris quis nibh lectus. Phasellus eros nunc, aliquet id lorem lacinia, pulvinar dignissim libero. Phasellus ac sapien dapibus, aliquam nibh ac, mollis nulla. Suspendisse ac finibus nisi. Nulla luctus bibendum massa at congue.
+                            Pellentesque et volutpat odio. Phasellus at tempor libero, quis congue arcu. Aliquam a viverra ipsum. Nullam metus arcu, consectetur ac feugiat in, feugiat eget lacus. In at interdum nunc. Sed eget urna efficitur, laoreet arcu sed, lacinia lacus. Aenean ornare quam sed ornare sollicitudin.
+                        </Label>
+                        <Button HorizontalOptions="FillAndExpand" BackgroundColor="#1964BE" Opacity="1" TextColor="White" x:Name="btnCerrarModal" Clicked="BtnCerrarModal_Clicked" Text="Aceptar"></Button>
+
+                    </StackLayout>
+                </Frame>
+            </ContentView>
+
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RinconDelSaber.View.PagePopup"
+             BackgroundColor="#ECECEC">
+    <ContentPage.Content>
+
+        
+
+        
+                <Frame Margin="10" Padding="5" VerticalOptions="CenterAndExpand" Opacity="1" BackgroundColor="#ffffff">
+                    <StackLayout>
+                        <Label LineBreakMode="WordWrap">
+                            Google puede modificar estas condiciones o las condiciones adicionales que se apliquen a un Servicio para, por ejemplo, reflejar cambios legislativos o en los Servicios. 
+                            Te recomendamos que consultes las condiciones de forma periódica.
+                        </Label>
+                        <Button HorizontalOptions="FillAndExpand" BackgroundColor="#1964BE" Opacity="1" TextColor="White" x:Name="btnCerrarModal" Clicked="BtnCerrarModal_Clicked" Text="Aceptar"></Button>
+                    </StackLayout>
+                </Frame>
+         
+        
+    </ContentPage.Content>
+</ContentPage>

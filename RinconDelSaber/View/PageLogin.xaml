@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RinconDelSaber.View.PageLogin">
+
+    <ContentPage.Content>
+
+        <ScrollView>
+            <Grid>
+
+                <StackLayout Padding="-10" Margin="1" HorizontalOptions="FillAndExpand">
+                    <Frame HeightRequest="120" BackgroundColor="Black" Padding="0" Margin="1">
+                        <Image Source="https://image.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg"  Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Padding="0" Margin="10,80,10,0" HorizontalOptions="FillAndExpand">
+                    <Frame  BackgroundColor="#DEDFE9" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                        <StackLayout>
+                            <StackLayout Padding="0" Margin="40" HorizontalOptions="Center">
+                                <Label Text="RINCÓN DEL SABER" TextColor="#12174C" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="27"/>
+                                <Frame BackgroundColor="Transparent" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="100" >
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="100" WidthRequest="100" CornerRadius="100" Padding="0" Margin="0" HorizontalOptions="Center">
+                                            <Image Source="https://i.ibb.co/TT6n9Jn/centrologo.jpg" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Padding="0" Margin="20,10" >
+                                <Frame BackgroundColor="Transparent"  Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="20">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="0">
+                                            <Image Source="https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+                                        <Entry x:Name="txtEmail" Placeholder="Ingrese usuario" FontSize="13" TextColor="DimGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" />
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="Transparent"  Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="0">
+                                            <Image Source="https://i.pinimg.com/originals/b0/09/40/b009405a1ddf2b92386a847205f8cd11.jpg" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+                                        <Entry x:Name="txtContrasena" Placeholder="Ingrese la clave" IsPassword="True" FontSize="13" TextColor="DimGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="Transparent"  Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+
+                                </Frame>
+                                <Frame BackgroundColor="Transparent"  Margin="0" Padding="0" HorizontalOptions="FillAndExpand" >
+                                    <StackLayout >
+                                        <Button BackgroundColor="DarkTurquoise" Clicked="BtnIniciarSesion_Clicked" TextColor="White" Text="Ingresar" x:Name="btnIniciarSesion" CornerRadius="34"/>
+
+
+                                    </StackLayout>
+                                </Frame>
+                                <Frame BackgroundColor="Transparent"  Margin="0" Padding="0" HorizontalOptions="FillAndExpand" >
+                                    <StackLayout >
+
+                                        <Button BackgroundColor="DarkTurquoise" Clicked="BtnRegistrarse_Clicked" TextColor="White" Text="Registrar" x:Name="btnRegistrarce" CornerRadius="34"/>
+
+                                    </StackLayout>
+                                </Frame>
+
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
